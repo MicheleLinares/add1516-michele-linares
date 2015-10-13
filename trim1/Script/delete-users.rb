@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+# encoding: utf-8
 
 fichero= `cat userslist.txt`
 usuarios= fichero.split("\n")
