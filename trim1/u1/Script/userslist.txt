@@ -1,0 +1,4 @@
+pedro:martin::12-01-1980:add
+luis:gonzales:luis@email.com:03-12-1969:delete
+marcos:figueroa:marcos@email.com:30-07-1973:add
+maria:acosta::20-02-1988:delete
