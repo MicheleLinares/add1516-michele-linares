@@ -1,0 +1,18 @@
+UUID=f3e66ad3-2653-43e7-90ae-5342ffb92626 swap                 swap       defaults              0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /                    btrfs      defaults              0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /boot/grub2/i386-pc  btrfs      subvol=boot/grub2/i386-pc 0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /boot/grub2/x86_64-efi btrfs      subvol=boot/grub2/x86_64-efi 0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /home                btrfs      subvol=home           0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /opt                 btrfs      subvol=opt            0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /srv                 btrfs      subvol=srv            0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /tmp                 btrfs      subvol=tmp            0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /usr/local           btrfs      subvol=usr/local      0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /var/crash           btrfs      subvol=var/crash      0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /var/lib/mailman     btrfs      subvol=var/lib/mailman 0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /var/lib/named       btrfs      subvol=var/lib/named  0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /var/lib/pgsql       btrfs      subvol=var/lib/pgsql  0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /var/log             btrfs      subvol=var/log        0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /var/opt             btrfs      subvol=var/opt        0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /var/spool           btrfs      subvol=var/spool      0 0
+UUID=bb75910c-4500-41fd-a6de-f67e7252261f /var/tmp             btrfs      subvol=var/tmp        0 0
+//172.18.10.53/corusant /mnt/samba-remoto/corusant cifs username=sith1,password=123
