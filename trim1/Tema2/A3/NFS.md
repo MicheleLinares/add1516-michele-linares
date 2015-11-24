@@ -75,7 +75,7 @@ Ahora necesitamos montar el recurso remoto para poder trabajar con él.
 * Comprobar: `showmount -a 172.18.10.22`
 
 	![](./imagenes/14.png)
-
+	
 * En el servidor ejecutamos el comando `showmount -e 172.18.10.22`, para comprobar los recursos compartidos.
 
 	![](./imagenes/15.png)
