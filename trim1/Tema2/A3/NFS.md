@@ -156,3 +156,15 @@ Comprobamos que las carpetas del servidor son accesibles desde el cliente:
 * Mostramos la lista de recursos exportados por el servidor NFS:
 	
 	![](images-opensuse/10.png)
+
+* Ahora pasamos a montar y usar cada recurso compartido. Primero creamos la carpeta '/mnt/remoto', y lo montamos directamente desde Yast:
+
+	![](images-opensuse/14.png)
+
+* Ejecutando el comando 'df -hT' nos aparecerá el recurso montado:
+
+	![](images-opensuse/11.png)
+	
+* Haremos lo mismo con el recurso 'private'
+
+	![](images-opensuse/15.png)
