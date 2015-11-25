@@ -69,7 +69,8 @@ Configurar el servidor NFS de la siguiente forma:
 **Montando el recurso**
 
 Ahora necesitamos montar el recurso remoto para poder trabajar con él.
-> Esto no lo hacemos con Administrador, sino con nuestro usuario normal.
+
+Esto no lo hacemos con Administrador, sino con nuestro usuario normal.
 * Montar recurso remoto: `mount –o anon,nolock,r,casesensitive \\\172.18.10.22\public *`
 * Comprobar: `net use`
 * Comprobar: `showmount -a 172.18.10.22`
