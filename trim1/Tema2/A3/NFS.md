@@ -112,5 +112,21 @@ Vamos a necesitar 2 máquinas GNU/Linux:
 	![](images-opensuse/1cli.png)
 
     ![](images-opensuse/2cli.png)
-	
-	
+   
+##2.1. Servidor NFS
+
+* Instalamos el servidor NFS por Yast. También podríamos instalarlo mediante la consola: 'apt-get install nfs-server'
+
+* Creamos las siguientes carpetas y les asignamos permisos:
+
+![](images-opensuse/4.png)
+
+* Configuramos el servidor NFS, abrimos el puerto en el cortafuegos e iniciamos automáticamente con el arranque:
+
+![](images-opensuse/3.png)
+
+* Añadimos los recursos compartidos, y los configuramos:
+
+![](images-opensuse/5.png)
+
+![](images-opensuse/6.png)
