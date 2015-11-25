@@ -109,4 +109,8 @@ Vamos a necesitar 2 máquinas GNU/Linux:
 	* IP estática 172.18.08.62
 	* Modo puente
 	
+	![](images-opensuse/1cli.png)
+
+    ![](images-opensuse/2cli.png)
+	
 	
