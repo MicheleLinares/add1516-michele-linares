@@ -171,10 +171,10 @@ Comprobamos que las carpetas del servidor son accesibles desde el cliente:
 	
 * Ya podemos crear carpetas o ficheros dentro de public, pero sólo nos permitirá leer en private:
 
-* Creamos un fichero dentro de public sin problema:
+	* Creamos un fichero dentro de public sin problema:
 
 	![](images-opensuse/12.png)
 	
-* Entramos en private e intentamos crear un fichero, vemos que nos indica que solo tenemos permisos de lectura:
+	* Entramos en private e intentamos crear un fichero, vemos que nos indica que solo tenemos permisos de lectura:
 
 	![](images-opensuse/13.png)
