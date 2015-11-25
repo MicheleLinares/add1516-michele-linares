@@ -90,3 +90,22 @@ Ahora necesitamos montar el recurso remoto para poder trabajar con él.
 
 	![](./imagenes/17.png)
 
+#2. SO OpenSUSE
+
+Vamos a necesitar 2 máquinas GNU/Linux:
+
+* MV OpenSUSE, será nuestro servidor NFS
+	* Nombre de la máquina: nfs-server-08, tendremos que modificar el fichero '/etc/hostname' para establecer el nombre de la máquina.
+	* IP estática 172.18.08.52
+	* Modo puente
+	
+	![](images-opensuse/1.png)
+
+    ![](images-opensuse/2.png)
+    
+* MV OpenSUSE, será nuestro cliente NFS:
+	* Nombre de la máquina: nfs-client-08
+	* IP estática 172.18.08.62
+	* Modo puente
+	
+	
