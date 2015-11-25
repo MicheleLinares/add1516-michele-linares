@@ -145,14 +145,14 @@ Vamos a necesitar 2 máquinas GNU/Linux:
 
 Comprobamos que las carpetas del servidor son accesibles desde el cliente:
 	
-	* Primero comprobamos la conectividad desde el cliente hacia el servidor:
+* Primero comprobamos la conectividad desde el cliente hacia el servidor:
 	
 	![](images-opensuse/ping.png)
 	
-	* Ejecutamos nmap para escanear y averiguar que servicios está ofreciendo la IP que escaneemos al exterior:
+* Ejecutamos nmap para escanear y averiguar que servicios está ofreciendo la IP que escaneemos al exterior:
 	
 	![](images-opensuse/9.png)
 	
-	* Mostramos la lista de recursos exportados por el servidor NFS:
+* Mostramos la lista de recursos exportados por el servidor NFS:
 	
 	![](images-opensuse/10.png)
