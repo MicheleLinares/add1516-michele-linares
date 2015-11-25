@@ -125,7 +125,7 @@ Vamos a necesitar 2 máquinas GNU/Linux:
 
 	![](images-opensuse/3.png)
 
-* Añadimos los recursos compartidos, y los configuramos:
+* Añadimos los recursos compartidos, y los configuramos de manera que en 'public' pueda acceder cualquiera y en 'private' solo la máquina cliente:
 
 	![](images-opensuse/5.png)
 
@@ -140,3 +140,19 @@ Vamos a necesitar 2 máquinas GNU/Linux:
 * Comprobamos que el servicio está activo:
 
 	![](images-opensuse/8.png)
+
+##2.2. Cliente NFS
+
+Comprobamos que las carpetas del servidor son accesibles desde el cliente:
+	
+	* Primero comprobamos la conectividad desde el cliente hacia el servidor:
+	
+	![](images-opensuse/ping.png)
+	
+	* Ejecutamos nmap para escanear y averiguar que servicios está ofreciendo la IP que escaneemos al exterior:
+	
+	![](images-opensuse/9.png)
+	
+	* Mostramos la lista de recursos exportados por el servidor NFS:
+	
+	![](images-opensuse/10.png)
