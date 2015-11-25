@@ -178,3 +178,9 @@ Comprobamos que las carpetas del servidor son accesibles desde el cliente:
 	* Entramos en private e intentamos crear un fichero, vemos que nos indica que solo tenemos permisos de lectura:
 
 	![](images-opensuse/13.png)
+	
+##2.3. Montaje automático
+
+* Para que los recursos se monten automáticamente cada vez que se inicie el equipo en OpenSUSE usamos Yast o bien modificamos la configuración directamente en el fichero '/etc/fstab':
+
+	![](images-opensuse/16.png)
