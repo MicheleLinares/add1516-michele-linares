@@ -119,14 +119,24 @@ Vamos a necesitar 2 máquinas GNU/Linux:
 
 * Creamos las siguientes carpetas y les asignamos permisos:
 
-![](images-opensuse/4.png)
+	![](images-opensuse/4.png)
 
 * Configuramos el servidor NFS, abrimos el puerto en el cortafuegos e iniciamos automáticamente con el arranque:
 
-![](images-opensuse/3.png)
+	![](images-opensuse/3.png)
 
 * Añadimos los recursos compartidos, y los configuramos:
 
-![](images-opensuse/5.png)
+	![](images-opensuse/5.png)
 
-![](images-opensuse/6.png)
+	![](images-opensuse/6.png)
+
+* Para iniciar y parar el servicio NFS, podemos hacerlo directamente desde el Yast o mediante comandos: 'systemctl start nfsserver.service'
+
+* Lo comprobamos ejecutando 'showmount -e localhost', este comando nos muestra la lista de recursos exportados por el servidor NFS.
+
+	![](images-opensuse/7.png)
+
+* Comprobamos que el servicio está activo:
+
+	![](images-opensuse/8.png)
