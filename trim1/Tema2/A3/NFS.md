@@ -185,4 +185,37 @@ Comprobamos que las carpetas del servidor son accesibles desde el cliente:
 
 	![](images-opensuse/16.png)
 	
+<<<<<<< HEAD
+=======
+	
+#3. Preguntas	
+
+* ¿Nuestro cliente GNU/Linux NFS puede acceder al servidor Windows NFS? Comprobarlo.
+
+* ¿Nuestro cliente Windows NFS podría acceder al servidor GNU/Linux NFS? Comprobarlo.
+
+	* Montamos los dos recusos Linux en nuestro cliente Windows con los siguientes comandos:
+
+		![](imagenes/20.png)
+		
+	* Comprobamos que se han montado.
+
+		![](imagenes/21.png)
+		
+	* En Public comprobamos que podemos crear y eliminar archivos.
+
+		![](imagenes/22.png)
+		
+	* En Private comprobamos que no podemos crear ni eliminar.
+
+		![](imagenes/23.png)
+
+
+
+
+
+
+
+
+>>>>>>> ups/master
 
