@@ -185,10 +185,27 @@ Comprobamos que las carpetas del servidor son accesibles desde el cliente:
 
 	![](images-opensuse/16.png)
 	
-	
 #3. Preguntas	
 
 * ¿Nuestro cliente GNU/Linux NFS puede acceder al servidor Windows NFS? Comprobarlo.
+
+	* Comprobamos la conectividad desde el cliente al sevidor Windows.
+	
+		![](images-opensuse/linux-windows.png)
+		
+	* Creamos la carpeta en /mnt/remoto.
+	
+		![](images-opensuse/linux-windows2.png)
+		
+	* Montamos los recursos.
+	
+		![](images-opensuse/linux-windows-priv-pub.png)
+	
+	* Vemos los recursos remotos montados en nuestras carpetas locales.
+	
+		![](images-opensuse/linux-win-dfht.png)
+		
+	* No hemos conseguido acceder a ninguna de los dos recursos desde el cliente Linux, hemos intentado cambiar permisos y volver a montar por entorno gráfico pero sin ningún éxito.
 
 * ¿Nuestro cliente Windows NFS podría acceder al servidor GNU/Linux NFS? Comprobarlo.
 
@@ -207,6 +224,7 @@ Comprobamos que las carpetas del servidor son accesibles desde el cliente:
 	* En Private comprobamos que no podemos crear ni eliminar.
 
 		![](imagenes/23.png)
+
 
 
 
