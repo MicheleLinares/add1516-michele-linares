@@ -184,3 +184,5 @@ Comprobamos que las carpetas del servidor son accesibles desde el cliente:
 * Para que los recursos se monten automáticamente cada vez que se inicie el equipo en OpenSUSE usamos Yast o bien modificamos la configuración directamente en el fichero '/etc/fstab':
 
 	![](images-opensuse/16.png)
+	
+
