@@ -109,4 +109,4 @@ who
 
 * Reiniciar la MV cliente y grabamosun vídeo mostrando el funcionamiento.
 
-[Video](]https://www.youtube.com/embed/OphXtSjNsg4)
+[Video](https://www.youtube.com/embed/OphXtSjNsg4)
