@@ -50,7 +50,6 @@ Cada MV debe tener configurada en su `/etc/hosts` al resto.
 
 En GNU/Linux, para comprobar que las configuraciones son correctas hacemos:
   
-    ```
 	date
 	ip a
 	route -n
@@ -64,14 +63,12 @@ En GNU/Linux, para comprobar que las configuraciones son correctas hacemos:
     ping cli1alu10.linares
     ping cli2alu10
     ping cli2alu10.linares  
-    ```
 
    ![](imagenes/4.png)
    ![](imagenes/5.png)
 
 En Windows comprobamos con:
 
-    ```
     date
     ipconfig
     route /PRINT
@@ -82,7 +79,6 @@ En Windows comprobamos con:
     ping cli1alu10.linares
     ping cli2alu10
     ping cli2alu10.linares
-    ```
 
    ![](imagenes/6.png)
    ![](imagenes/7.png)
