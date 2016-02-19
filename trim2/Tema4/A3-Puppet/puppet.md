@@ -66,8 +66,8 @@ En GNU/Linux, para comprobar que las configuraciones son correctas hacemos:
     ping cli2alu10.linares  
     ```
 
-    ![](imagenes/4.png)
-    ![](imagenes/5.png)
+   ![](imagenes/4.png)
+   ![](imagenes/5.png)
 
 En Windows comprobamos con:
 
@@ -84,8 +84,8 @@ En Windows comprobamos con:
     ping cli2alu10.linares
     ```
 
-    ![](imagenes/6.png)
-    ![](imagenes/7.png)
+   ![](imagenes/6.png)
+   ![](imagenes/7.png)
 
 
 #2. Instalación y configuración Puppet
@@ -99,6 +99,7 @@ En Windows comprobamos con:
  	![](imagenes/18.png)
 
 * Preparamos los ficheros/directorios en el master10:
+
     ```
     mkdir /etc/puppet/files
 	mkdir /etc/puppet/manifests
@@ -107,7 +108,8 @@ En Windows comprobamos con:
 	touch /etc/puppet/manifests/site.pp
 	touch /etc/puppet/manifests/classes/hostlinux1.pp
     ```
-![](imagenes/9.png)
+
+   ![](imagenes/9.png)
 
 ##2.1 /etc/puppet/manifests/site.pp
 
@@ -143,7 +145,6 @@ organizarnos mejor, y las vamos a guardar en la ruta `/etc/puppet/manifests/clas
 
 #3. Instalación y configuración del cliente1
 
-Instalación:
 * Instalamos Agente Puppet en el cliente: `zypper install puppet`
 
 ![](imagenes/15.png)
@@ -204,7 +205,6 @@ Ahora vamos a pasar a configurar algo más complejo.
 
 ![](imagenes/22.png)
 
-> Por defecto todos los nodos (máquinas clientes) van a coger la misma configuración.
 
 #6. Cliente puppet windows
 
@@ -216,8 +216,6 @@ Vamos a configurar Puppet para atender también a clientes Windows.
 dentro del fichero `/etc/puppet/manifests/classes/hostwindows3.pp`, con el siguiente contenido:
 
 ![](imagenes/24.png)
-
-> De momento, esta configuración es muy básica. Al final la ampliaremos algo más.
 
 * Ahora vamos a modificar el fichero `site.pp` del master, para que tenga en cuenta
 la configuración de clientes GNU/Linux y clientes Windows, de la siguiente forma:
@@ -237,20 +235,20 @@ la configuración de clientes GNU/Linux y clientes Windows, de la siguiente form
 * Ahora vamos a instalar AgentePuppet en Windows. Recordar que debemos instalar la misma versión en
 ambos equipos (Usar comando `facter` para ver la versión de puppet).
 
-![](imagenes/28.png)
+ 	![](imagenes/28.png)
 
 * Le decimos al agente Puppet el nombre del servidor master.
 
-![](imagenes/29.png) 
+ 	![](imagenes/29.png) 
 
 * Debemos generar el certificado en el cliente.
 
-![](imagenes/31.png)
+ 	![](imagenes/31.png)
 
 * Y lo aceptamos en el master.
 
-![](imagenes/32.png)
-![](imagenes/33.png)
+ 	![](imagenes/32.png)
+ 	![](imagenes/33.png)
 
 
 * Iniciar consola puppet como administrador y probar los comandos: 
@@ -269,28 +267,28 @@ ambos equipos (Usar comando `facter` para ver la versión de puppet).
 
 * Comprobamos que se nos ha creado el archivo.
 
-![](imagenes/37.png)
+ 	![](imagenes/37.png)
 
 ##6.3 Segunda version de hostwindows3.pp
 
 * Configuración en el master del fichero `/etc/puppet/manifests/classes/hostwindows3.pp` 
 para el cliente Windows:
 
-![](imagenes/38.png)
+ 	![](imagenes/38.png)
 
 * Después de realizar los cambios pertinentes en el fichero site.pp y reiniciar todo, comprobamos que realmente se crean los usuarios.
 
-![](imagenes/39.png)
+ 	![](imagenes/39.png)
 
 ##6.4 configuración elegida por el alumno.
 
 * Creamos el fichero con `/etc/puppet/manifests/classes/hostwindows4.pp` para eliminar el archivo anteriormente creado.
 
-![](imagenes/40.png)
+ 	![](imagenes/40.png)
 
 * Lo comprobamos.
 
-![](imagenes/41.png)
+ 	![](imagenes/41.png)
 
 
 
