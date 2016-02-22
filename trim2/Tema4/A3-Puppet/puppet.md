@@ -18,7 +18,7 @@
 	    * Enlace: 172.18.0.1
 	    * DNS: 8.8.4.4
 	    * Nombre del equipo: cli1alu10
-	    * Dominio = primer-apellido-del-alumno
+	    * Dominio = linares
 	    * Instalar OpenSSH.
 	* MV3 - client2: recibe órdenes del master.
 	    * SO Windows 7.
