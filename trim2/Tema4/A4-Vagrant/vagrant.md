@@ -139,3 +139,60 @@ abrimos navegador en la máquina real con URL `http://127.0.0.1:4567`.
 
 ![](./imagenes/16.png)
 
+##4. Nuestras propias cajas
+
+* Crear el usuario Vagrant, para poder acceder a la máquina virtual por ssh, a este usuario debemos crear una relación de confianza  usando el siguiente Keypairs.
+
+```
+useradd -m vagrant
+su - vagrant
+mkdir .ssh
+wget https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub -O .ssh/authorized_keys`
+chmod 700 .ssh
+chmod 600 .ssh/authorized_keys
+```
+
+ ![](./imagenes/18.png)
+
+* Aunque Vagrant no esta pensado para usar el usuario root, a veces nos es necesario por lo que debemos cambiar la password de root a vagrant.
+
+Indicamos que la password es vagrant `passwd root`.
+
+![](./imagenes/19.png)
+
+
+* Conceder permisos al usuario vagrant para que pueda configurar la red, instalar software, montar carpetas compartidas... para ello debemos configurar visudo para que no nos solicite la password de root, cuando realicemos estas operación con el usuario vagrant.
+
+`visudo`
+
+Ahora debemos añadir la siguiente linea
+
+`vagrant ALL=(ALL) NOPASSWD: ALL`
+
+![](./imagenes/20.png)
+
+* Debemos asegurarnos que tenemos instalado las VirtualBox Guest Additions, para conseguir mejoras en el S.O o poder compartir carpetas con el anfitrión.
+
+![](./imagenes/21.png)
+
+* Ahora vamos a crear el Box, abrimos una consola y ejecutamos lo siguiente:
+
+`vagrant package --base openSuseVagrant`
+
+* Ya podemos añadir nuestro box, para ello usamos el comando siguiente:
+
+`vagrant box add openSuseVagrant /home/dbigcloud/package.box`
+
+![](./imagenes/22.png)
+
+* Ahora debéis de crear un proyecto para iniciar la máquina virtual, si no os acordáis podéis repasar el árticulo de la semana pasada. Ejecutamos `vagrant init` para crear el fichero de configuración nuevo con el siguiente contenido.
+
+![](./imagenes/24.png)
+
+
+Al levantar la máquina con esta nueva caja obtengo este error.
+Probablemente por tener mal los certificados.
+
+![](./imagenes/23.png)
+
+
