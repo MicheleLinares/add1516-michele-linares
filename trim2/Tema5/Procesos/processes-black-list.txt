@@ -1,0 +1,5 @@
+iceweasel:kill
+gimp-2.8:r
+xfce4-notes:remove
+xfce4-terminal:n
+geany:notify
